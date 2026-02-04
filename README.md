@@ -2,6 +2,63 @@
 
 **README.md**
 
+## Project Overview
+
+This project is the foundation for a **tiered service selection and intelligent quote-request system** for Fuzio Properties.
+
+The goal is to clearly communicate Fuzio’s management service offerings to prospective Body Corporate clients, allow them to self-identify their needs through a structured tier system, and then funnel those requests into a controlled, professional internal quoting workflow.
+
+### What this system does
+
+1. **Tiered Service Presentation (Frontend)**
+
+  * Displays Fuzio’s management offerings as clear service tiers (Foundation, Financial Control, Governance & Operations, Strategic / Turnaround).
+  * Uses a visual inclusion/exclusion format (✔ included / ✖ not included) so clients can immediately understand scope.
+  * Does not display pricing — tiers are indicative only and used for qualification.
+
+2. **Guided Quote Request**
+
+  * After reviewing tiers, users can request a quote via a structured form.
+  * The form collects key scheme details such as:
+
+    * Scheme size, location, and age
+    * Scheme type and operational complexity
+    * Preferred service tier
+    * Contact details
+  * Optional self-assessment questions allow users to declare the scheme’s current position (arrears, AGMs, audits, disputes).
+
+3. **Backend Intelligence & Qualification (Internal)**
+
+  * Submitted data is sent to a secure backend (outside of WordPress).
+  * AI is used internally to:
+
+    * Normalise and summarise the submission
+    * Enrich the request with publicly available contextual signals where appropriate
+    * Draft a structured internal briefing email for Fuzio staff
+  * AI output is **never shown to the client** and does not make final decisions.
+
+4. **Human-Led Quoting**
+
+  * Fuzio staff review the AI-assisted summary.
+  * Quotes are drafted and approved by humans only.
+  * This ensures professional judgment, legal safety, and flexibility per scheme.
+
+### What this system is NOT
+
+* It does not generate automatic prices.
+* It does not publicly assess or “diagnose” schemes.
+* It does not replace professional management judgment.
+* It does not expose AI outputs or risk assessments to clients.
+
+### Intended Benefits
+
+* Educates prospective clients before first contact
+* Sets clear expectations around scope of service
+* Improves quality and consistency of quote requests
+* Reduces unqualified or misaligned leads
+* Positions Fuzio Properties as structured, transparent, and professional
+* Creates a scalable foundation for future automation and CRM integration
+
 ## 1. Brand & Colour Scheme (Fuzio Properties)
 
 These colours must be used consistently across the tier UI, forms, and call-to-action sections to remain aligned with the Fuzio website branding.
